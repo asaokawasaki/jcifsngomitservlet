@@ -2,13 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>org.codelibs</groupId>
-	<artifactId>jcifs</artifactId>
-	<version>2.1.7-SNAPSHOT</version>
+
+	<groupId>com.github.asaokawasaki</groupId>
+	<artifactId>jcifsomitservlet</artifactId>
+	<version>0.0.1</version>
 	<packaging>jar</packaging>
-	<name>jCIFS</name>
-	<url>https://github.com/codelibs/jcifs</url>
-	<description>JCIFS is an Open Source client library that implements the CIFS/SMB networking protocol in 100% Java</description>
+
+	<name>jcifsngomitservlet</name>
+	<url>https://github.com/asaokawasaki/jcifsngomitservlet</url>
+	<description>Remove servlet dependencies from original.</description>
+
 	<licenses>
 		<license>
 			<name>GNU Lesser General Public License, version 2.1</name>
@@ -16,11 +19,29 @@
 			<distribution>repo</distribution>
 		</license>
 	</licenses>
+
+	<developers>
+		<developer>
+			<name>Asao Kawasaki</name>
+			<email>kakiokawasaki@sonatype.com</email>
+			<organization>Sonatype</organization>
+			<organizationUrl>http://www.sonatype.com</organizationUrl>
+		</developer>
+	</developers>
+
 	<scm>
-		<connection>scm:git:git@github.com:codelibs/jcifs.git</connection>
-		<developerConnection>scm:git:git@github.com:codelibs/jcifs.git</developerConnection>
-		<url>https://github.com/codelibs/jcifs</url>
+		<url>https://github.com/asaokawasaki/jcifsngomitservlet</url>
+		<connection>scm:git:git@github.com:asaokawasaki/jcifsngomitservlet.git</connection>
+		<developerConnection>scm:git:git@github.com:asaokawasaki/jcifsngomitservlet.git</developerConnection>
 	</scm>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>
+
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
